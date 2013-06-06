@@ -36,13 +36,13 @@ public class Exemplo11 {
 	
 	private void jpa() throws JPAException {
 		try {
-			this.hibernate();
+			this.hibernate("TB_UFC");
 		} catch (IOException e) {
 			throw new JPAException("Erro no JPA.");
 		}
 	}
 	
-	private void hibernate() throws IOException {
+	private void hibernate(String tabela) throws IOException {
 		throw new IOException ("Tabela não existe!");
 	}
 	
