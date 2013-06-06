@@ -11,12 +11,16 @@ public class Exemplo03 {
 	private static int numProdutos = 0;
 	
 	public static void adiciona(Produto p) {
+		System.out.println("Adicionando o produto: " + p.getDescricao());
 		produtoEmEstoque.add(p);
+		System.out.println("Tamanho do estoque: " + produtoEmEstoque.size() + " itens.");
 		numProdutos++;
 	}
 
 	public static void remove(Produto p) {
+		System.out.println("Removendo o produto: " + p.getDescricao());
 		produtoEmEstoque.remove(p);
+		System.out.println("Tamanho do estoque: " + produtoEmEstoque.size() + " itens.");
 		numProdutos--;
 	}
 	
@@ -27,8 +31,6 @@ public class Exemplo03 {
 		adiciona(arroz);
 		adiciona(feijao);
 
-		System.out.println("Tamanho da coleção: " + produtoEmEstoque.size());
 		remove(feijao);
-		System.out.println("Tamanho da coleção: " + produtoEmEstoque.size());
 	}
 }
