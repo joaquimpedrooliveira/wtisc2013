@@ -37,5 +37,13 @@ public class Produto {
 			return false;
 		return true;
 	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Produto [codigo=").append(codigo)
+				.append(", descricao=").append(descricao).append("]");
+		return builder.toString();
+	}
+	
 	
 }
